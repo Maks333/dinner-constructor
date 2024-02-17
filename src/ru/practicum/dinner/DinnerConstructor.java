@@ -23,11 +23,11 @@ public class DinnerConstructor {
     }
 
     public boolean checkType(String type) {
-        return false;
+        return dishesByType.containsKey(type);
     }
 
     public void addToTypePool(String type) {
-
+        typePool.add(type);
     }
 
     public ArrayList<ArrayList<String>> generateDinners(int numberOfCombos) {

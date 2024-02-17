@@ -59,8 +59,14 @@ public class Main {
         //реализуйте ввод типов блюд
         while (!nextItem.isEmpty()) {
             //2. Implement add dish type pool
+            if (dc.checkType(nextItem)) {
+                dc.addToTypePool(nextItem);
+            } else {
+                System.out.println("Данный тип блюда отсутствует в меню. Введите другой тип блюда.");
+            }
+            nextItem = scanner.nextLine();
         }
-
+        System.out.println(dc.typePool);
         // сгенерируйте комбинации блюд и выведите на экран
         //3. Implement add dish combination logic
     }
