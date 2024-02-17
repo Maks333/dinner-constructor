@@ -42,7 +42,8 @@ public class Main {
         String dishName = scanner.nextLine();
 
         // добавьте новое блюдо
-        //1. Implement addDish logic
+        dc.addDish(dishType, dishName);
+        //dc.printDishesByType();
     }
 
     private static void generateDishCombo() {
