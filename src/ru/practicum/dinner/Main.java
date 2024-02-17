@@ -42,6 +42,7 @@ public class Main {
         String dishName = scanner.nextLine();
 
         // добавьте новое блюдо
+        //1. Implement addDish logic
     }
 
     private static void generateDishCombo() {
@@ -56,10 +57,10 @@ public class Main {
 
         //реализуйте ввод типов блюд
         while (!nextItem.isEmpty()) {
-
+            //2. Implement add dish type pool
         }
 
         // сгенерируйте комбинации блюд и выведите на экран
-
+        //3. Implement add dish combination logic
     }
 }
