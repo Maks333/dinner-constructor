@@ -14,7 +14,7 @@ public class Main {
 
         while (true) {
             printMenu();
-            String command = scanner.nextLine();
+            String command = scanner.nextLine().trim();
 
             switch (command) {
                 case "1":
@@ -24,6 +24,7 @@ public class Main {
                     generateDishCombo();
                     break;
                 case "3":
+                    System.out.println("Программа завершает работу.");
                     return;
             }
         }
